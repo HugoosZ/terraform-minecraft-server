@@ -1,0 +1,21 @@
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Variables sensibles (donde pones tu project_id, etc.)
+*.tfvars
+*.tfvars.json
+
+# Archivos de log y crash
+*.log
+crash.log
+
+# Credenciales de Google Cloud (si las descargas localmente)
+*.json
+!variables.tf  # (Opcional: Asegúrate de que no se ignoren tus definiciones)
+
+# Archivos del sistema
+.DS_Store
+.idea/
+.vscode/
