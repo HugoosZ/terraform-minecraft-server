@@ -1,6 +1,6 @@
 # ⛏️ Minecraft Server on Google Cloud with Terraform
 
-Este proyecto automatiza el despliegue de un servidor de Minecraft de alto rendimiento (PaperMC) sobre Google Cloud Platform (GCP) utilizando infraestructura como código con Terraform y contenedores con Docker.
+Este proyecto automatiza el despliegue de un servidor de Minecraft de alto rendimiento (PaperMC) sobre Google Cloud Platform (GCP) utilizando infraestructura como código con Terraform y contenedor[...]
 
 ## 🚀 Requisitos previos
 
@@ -98,6 +98,18 @@ Entrar a la consola de comandos de Minecraft:
 sudo docker exec -i mc-server rcon-cli
 ```
 
+### Dar OP (admin) a un jugador
+
+Dentro de la consola RCON, ejecuta:
+
+```text
+op USER
+```
+
+Reemplaza `USER` por el nombre exacto del jugador.
+
+> Nota: Para quitar permisos de admin, usa `deop USER`.
+
 Reiniciar el servidor:
 
 ```bash
@@ -109,5 +121,3 @@ Destruir toda la infraestructura:
 ```bash
 terraform destroy
 ```
-
-
